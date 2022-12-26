@@ -12,4 +12,8 @@ export class MessageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  saveMessage(message: any){
+    console.log(message.value);
+  }
+
 }
