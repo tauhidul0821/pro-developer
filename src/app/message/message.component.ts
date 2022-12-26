@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../services/message.service';
 
 @Component({
   selector: 'app-message',
@@ -7,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
   }
 
   saveMessage(message: any){
-    console.log(message.value);
+    this.messageService.message(message.value);
+    // console.log(message.value);
   }
 
 }
