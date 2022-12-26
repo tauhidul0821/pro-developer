@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
-    this.messageService.messageStore.subscribe(res => {
+    this.messageService.messageStore$.subscribe(res => {
       this.message = res;
     })
   }

@@ -5,14 +5,13 @@ import { Subject, BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class MessageService {
-  public messageStore = new Subject<string>();
+  // public messageStore$ = new Subject<string>();
+  public messageStore$ = new BehaviorSubject<string>('Awesome');
 
 
   constructor() { }
 
   message(value:string): void {
-    console.log('message service called ...');
-    this.messageStore.next(value)
-    console.log('messageStore', this.messageStore);
+    this.messageStore$.next(value)
   }
 }

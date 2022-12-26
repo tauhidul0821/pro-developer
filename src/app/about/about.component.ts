@@ -12,8 +12,8 @@ export class AboutComponent implements OnInit {
   constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
-    this.messageService.messageStore.subscribe(res => {
-      console.log('about :- ', res);
+    this.messageService.messageStore$.subscribe(res => {
+    
       this.message = res;
     });
   }
