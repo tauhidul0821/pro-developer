@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { fromEvent } from 'rxjs';
-import { DesignService } from '../services/design.service';
+import { DesignService } from '@services/design.service';
 
 @Component({
   selector: 'app-from-event',
