@@ -6,7 +6,7 @@ import { IUsers } from '../model/users.model';
   providedIn: 'root'
 })
 export class MessageService {
-  public messageStore = new Subject<any>();
+  public messageStore = new Subject<IUsers>();
 
 
   constructor() { }
