@@ -8,6 +8,10 @@ import { MessageComponent } from './message/message.component';
 import { HomeComponent } from './home/home.component';
 import { MessageService } from './services/message.service';
 import { MapComponent } from './map/map.component';
+import { ListComponent } from './list/list.component';
+import { FromEventComponent } from './from-event/from-event.component';
+import { ObservableComponent } from './observable/observable.component';
+import { SubjectComponent } from './subject/subject.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { MapComponent } from './map/map.component';
     AboutComponent,
     MessageComponent,
     HomeComponent,
-    MapComponent
+    MapComponent,
+    ListComponent,
+    FromEventComponent,
+    ObservableComponent,
+    SubjectComponent
   ],
   imports: [
     BrowserModule,
