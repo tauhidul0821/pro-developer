@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IUsers } from '../model/users.model';
 import { MessageService } from '../services/message.service';
 
 @Component({
@@ -7,14 +8,14 @@ import { MessageService } from '../services/message.service';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  message: string;
+  users: IUsers;
 
   constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.messageService.messageStore.subscribe(res => {
-      console.log('about :- ', res);
-      this.message = res;
+     // console.log('about :- ', res);
+      this.users = res;
     });
   }
 

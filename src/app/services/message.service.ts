@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Subject, BehaviorSubject } from 'rxjs';
+import { IUsers } from '../model/users.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessageService {
-  public messageStore = new Subject<string>();
+  public messageStore = new Subject<any>();
 
 
   constructor() { }
 
-  message(value:string): void {
-    console.log('message service called ...');
+  message(value:IUsers): void {
     this.messageStore.next(value)
-    console.log('messageStore', this.messageStore);
   }
 }
