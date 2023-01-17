@@ -45,6 +45,10 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
     path: 'message',
     component: MessageComponent
   },
@@ -68,7 +72,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { 
+export class AppRoutingModule {
   static components = [
     AboutComponent,
     MessageComponent,

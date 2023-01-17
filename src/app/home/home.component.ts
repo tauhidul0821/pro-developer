@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IUsers } from '@models/users.model';
 import { MessageService } from '@services/message.service';
+import {take} from "rxjs";
 
 @Component({
   selector: 'app-home',
@@ -12,10 +13,12 @@ export class HomeComponent implements OnInit {
   constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
-    this.messageService.messageStore.subscribe(res => {
-     // console.log('home :- ', res);
+    this.messageService.messageStore.pipe(
+      take(1)
+    ).subscribe(res => {
+     console.log('home component:-  :- ', res);
       this.users = res;
-      
+
     })
   }
 
