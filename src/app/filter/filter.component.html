@@ -1,1 +1,82 @@
-<p>filter works!</p>
+<div class="my-3">
+    <h2>Filter</h2>
+    <br>
+
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Ex -01</strong>
+            <hr>
+
+            <p class="bg-light py-2 px-3 border rounded border-style">
+                <strong>Filter : </strong> by name length
+                <input type="number" style="width: 50px;" (keyup)="onKyUp($event, 'ex1')">
+            </p>
+            <table class="table table-hover table-bordered">
+                <tr class="border">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+                <tr *ngFor="let item of data01">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.gender}}</td>
+
+                </tr>
+
+            </table>
+        </div>
+        <div class="col-md-4">
+            <strong>Ex -02</strong>
+            <hr>
+
+            <p class="bg-light py-2 px-3 border rounded border-style">
+                <strong>Filter : </strong> by gender
+                <select id="gender" name="gender" (change)="selectOption($event)">
+                    <option value="Male">male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </p>
+            <table class="table table-hover table-bordered">
+                <tr class="border">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+                <tr *ngFor="let item of data2">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.gender}}</td>
+
+                </tr>
+
+            </table>
+        </div>
+
+        
+        <div class="col-md-4">
+            <strong>Ex -03</strong>
+            <hr>
+
+            <p class="bg-light py-2 px-3 border rounded border-style">
+                <strong>Filter : </strong> nth number
+                <input type="number" style="width: 50px;" (keyup)="onKyUp($event, 'ex2')">
+            </p>
+            <table class="table table-hover table-bordered">
+                <tr class="border">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+                <tr *ngFor="let item of data3">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.gender}}</td>
+
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+</div>
