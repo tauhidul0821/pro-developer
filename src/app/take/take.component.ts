@@ -33,9 +33,9 @@ export class TakeComponent implements OnInit {
     this.intervalSource.pipe(
       map(res => 'Number '+res),
       takeUntil(condition1)
-
+   
     ).subscribe(res => {
-      console.log(res);
+      console.log('take', res);
       this.designService.print(res, 'elContainer3')
     })
 
