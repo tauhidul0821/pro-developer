@@ -21,6 +21,16 @@ import { FilterComponent } from '@app/filter/filter.component';
 import { AsyncSubjectComponent } from '@app/async-subject/async-subject.component';
 import { ConcatMergeComponent } from '@app/concat-merge/concat-merge.component';
 
+import { TakeComponent } from '@app/take/take.component';
+import { ConcatMapComponent } from '@app/concat-map/concat-map.component';
+import { ConcatAndMergeComponent } from '@app/concat-and-merge/concat-and-merge.component';
+import { MergeMapComponent } from '@app/merge-map/merge-map.component';
+import { SwitchMapComponent } from '@app/switch-map/switch-map.component';
+import { ExhaustMapComponent } from '@app/exhaust-map/exhaust-map.component';
+import { CombineLatestComponent } from '@app/combine-latest/combine-latest.component';
+import { ZipForkjoinComponent } from '@app/zip-forkjoin/zip-forkjoin.component';
+import { CatchErrorComponent } from '@app/catch-error/catch-error.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -87,6 +97,15 @@ export class AppRoutingModule {
     ShareReplayComponent,
     FilterComponent,
     AsyncSubjectComponent,
-    ConcatMergeComponent
+    ConcatMergeComponent,
+    TakeComponent,
+    ConcatMapComponent,
+    ConcatAndMergeComponent,
+    MergeMapComponent,
+    SwitchMapComponent,
+    ExhaustMapComponent,
+    CombineLatestComponent,
+    ZipForkjoinComponent,
+    CatchErrorComponent,
   ];
 }
