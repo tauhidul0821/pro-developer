@@ -24,6 +24,7 @@ export class TakeComponent implements OnInit {
   }
 
   takeUntilExample(){
+    console.log('takeUntilExample:: ');
     this.intervalSource = interval(1000);
 
     let condition1 = timer(6000)
@@ -31,7 +32,7 @@ export class TakeComponent implements OnInit {
     
     this.intervalSource.pipe(
       map(res => 'Number '+res),
-      takeUntil(condition2)
+      takeUntil(condition1)
 
     ).subscribe(res => {
       console.log(res);
