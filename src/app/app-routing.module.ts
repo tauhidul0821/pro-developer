@@ -48,6 +48,7 @@ const routes: Routes = [
       {path: 'filter', component: FilterComponent},
       {path: 'async-subject', component: AsyncSubjectComponent},
       {path: 'concat-merge', component: ConcatMergeComponent},
+      {path: 'take', component: TakeComponent},
     ]
   },
   {
