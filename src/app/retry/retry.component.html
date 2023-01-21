@@ -1,1 +1,35 @@
-<p>retry works!</p>
+<div class="my-3">
+    <h2>Retry, RetryWhen, Scan and Delay</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-hover table-bordered" *ngIf="person">
+                <tr>
+                    <th>Id</th>    
+                    <td>{{person.id}}</td>
+                </tr>
+                <tr>
+                    <th>Name</th>    
+                    <td>{{person.name}}</td>
+                </tr>
+                <tr>
+                    <th>userName</th>    
+                    <td>{{person.username}}</td>
+                </tr>
+                <tr>
+                    <th>email</th>    
+                    <td>{{person.email}}</td>
+                </tr>
+                <tr>
+                    <th>website</th>    
+                    <td>{{person.website}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button class="btn btn-primary" (click)="fetchData()">Fetch Details</button>
+    <p>Status: {{status}}</p>
+
+
+
+</div>
