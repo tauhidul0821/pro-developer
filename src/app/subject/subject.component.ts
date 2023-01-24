@@ -19,7 +19,7 @@ export class SubjectComponent implements OnInit {
       name: this.fondovalor.nativeElement.value,
       age: Math.floor((Math.random() * 60) + 1)
     }
-    this.messageService.message(obj);
+    this.messageService.messageStore.next(obj);
   }
 
 }

@@ -30,6 +30,8 @@ import { ExhaustMapComponent } from '@app/exhaust-map/exhaust-map.component';
 import { CombineLatestComponent } from '@app/combine-latest/combine-latest.component';
 import { ZipForkjoinComponent } from '@app/zip-forkjoin/zip-forkjoin.component';
 import { CatchErrorComponent } from '@app/catch-error/catch-error.component';
+import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
+import { BehaviorSubjectTestComponent } from './behavior-subject-test/behavior-subject-test.component';
 
 const routes: Routes = [
   {
@@ -49,6 +51,9 @@ const routes: Routes = [
       {path: 'async-subject', component: AsyncSubjectComponent},
       {path: 'concat-merge', component: ConcatMergeComponent},
       {path: 'take', component: TakeComponent},
+      {path: 'home', component: HomeComponent},
+      {path: 'behavior-subject', component: BehaviorSubjectComponent},
+      {path: 'behavior-subject-test', component: BehaviorSubjectTestComponent}
     ]
   },
   {
