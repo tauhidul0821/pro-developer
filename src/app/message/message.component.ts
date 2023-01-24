@@ -14,7 +14,8 @@ export class MessageComponent implements OnInit {
   }
 
   saveMessage(message: any){
-    this.messageService.message(message.value);
+    this.messageService.messageStore.next(message.value)
+    // this.messageService.message(message.value);
     // console.log(message.value);
   }
 

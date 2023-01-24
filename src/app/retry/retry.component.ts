@@ -20,7 +20,7 @@ export class RetryComponent implements OnInit {
 // REF: https://stackoverflow.com/questions/51898005/rxjs6-filter-array-of-objects
   fetchData(){
     this.status = 'Fetching data...';
-    this.http.get(this.rightUrl).pipe(
+    this.http.get(this.wrongUrl).pipe(
       switchMap((res: any) => res),
       take(1),
       retryWhen(err => err.pipe(
@@ -39,6 +39,7 @@ export class RetryComponent implements OnInit {
         },0)
       ))
     ).subscribe((res: any) => {
+      this.status = 'Success';
       this.person = res;
     })
   }
