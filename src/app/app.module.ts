@@ -8,6 +8,7 @@ import { MessageService } from '@services/message.service';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { BehaviorSubjectTestComponent } from './behavior-subject-test/behavior-subject-test.component';
 import { StoreModule } from '@ngrx/store';
+import { rootReducer } from 'src/reducers';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { StoreModule } from '@ngrx/store';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot(rootReducer)
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
