@@ -7,6 +7,7 @@ import { AppComponent } from '@app/app.component';
 import { MessageService } from '@services/message.service';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { BehaviorSubjectTestComponent } from './behavior-subject-test/behavior-subject-test.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BehaviorSubjectTestComponent } from './behavior-subject-test/behavior-s
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
