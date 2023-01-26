@@ -21,11 +21,11 @@ export function UserReducer(state = initialState, action: Action): IUserReducerS
             return {...state, loading: true}
         }
         case USER_LIST_SUCCESS: {
-            const data = state.users.concat(action.payload.data);
+            const data = action.payload.data;
             return {...state, loading: false, loaded: true, users: data}
         }
         default: {
-            return state;
+            return state
         }
     }
 

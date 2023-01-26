@@ -4,14 +4,16 @@ export const USER_LIST_REQUEST = 'user list request';
 export const USER_LIST_SUCCESS = 'user list success';
 
 export class UserListRequestAction {
-    readonly type = USER_LIST_REQUEST
+    readonly type = USER_LIST_REQUEST;
 }
 
 
 export class UserListSuccessAction {
     readonly type = USER_LIST_SUCCESS;
+    // payload:  = {};
 
-    constructor(payload?: {data: IUsers[]}){
+    constructor(public payload:any){
+        // this.payload = payload;
 
     }
 }

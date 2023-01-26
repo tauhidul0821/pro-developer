@@ -9,13 +9,15 @@ import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.co
 import { BehaviorSubjectTestComponent } from './behavior-subject-test/behavior-subject-test.component';
 import { StoreModule } from '@ngrx/store';
 import { rootReducer } from 'src/reducers';
+import { NgrxComComponent } from './ngrx-com/ngrx-com.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppRoutingModule.components,
     BehaviorSubjectComponent,
-    BehaviorSubjectTestComponent
+    BehaviorSubjectTestComponent,
+    NgrxComComponent
   ],
   imports: [
     BrowserModule,
