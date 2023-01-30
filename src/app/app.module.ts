@@ -7,18 +7,23 @@ import { AppComponent } from '@app/app.component';
 import { MessageService } from '@services/message.service';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { BehaviorSubjectTestComponent } from './behavior-subject-test/behavior-subject-test.component';
+import { StoreModule } from '@ngrx/store';
+import { rootReducer } from 'src/reducers';
+import { NgrxComComponent } from './ngrx-com/ngrx-com.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppRoutingModule.components,
     BehaviorSubjectComponent,
-    BehaviorSubjectTestComponent
+    BehaviorSubjectTestComponent,
+    NgrxComComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot(rootReducer)
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
