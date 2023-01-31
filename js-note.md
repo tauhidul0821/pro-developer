@@ -106,8 +106,7 @@ function personSales(obj){
 
 
 
-
-<script>
+```JS
 
 
 // Object.create
@@ -219,5 +218,4 @@ function personSales(obj){
 console.log(personSales(sales));
 
 
-
-</script>
+```
