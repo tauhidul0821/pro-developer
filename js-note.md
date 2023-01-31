@@ -1,6 +1,7 @@
-<h1>Object.create</h1>
-<pre>
-// Object.create
+
+## Object.create
+
+```JS
 var person = {
     city: 'Dhaka',
     calculateAge: function() {
@@ -26,11 +27,8 @@ tuhin.calculateAge();
  * Output: 29
 */
 
-</pre>
-
-
-<h1>Object.assign</h1>
-<pre>
+```
+```JS
     
 //    Object.assign
 const target = {
@@ -50,21 +48,21 @@ console.log(target);
     {a: 1, b: 4, name: 'Khadiza', c: 5}
 */
 
-</pre>
-<h1>Object.keys</h1>
+```
 
-<pre>
-    
+## Object.keys
+```JS
+
 // Object.keys
 const objKeys = Object.keys(source);
 console.log('Keys :- ', objKeys);
 /*Output:
     ['b', 'c', 'name']
 */
-</pre>
-<h1>Object.values</h1>
+```
 
-<pre>
+## Object.values
+```JS
     
 const sales = {
     John: 30,
@@ -87,12 +85,10 @@ console.log(sumSales(sales));
     204
 */
 
-</pre>
+```
+## Object.entries
 
-
-
-<h1>Object.entries</h1>
-<pre>
+```JS
     const sales = {
         John: 30,
         Sally: 40,
@@ -106,7 +102,7 @@ function personSales(obj){
         console.log(`${key} had ${value} sales`);
     }
 }
-</pre>
+```
 
 
 
