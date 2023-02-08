@@ -7,13 +7,15 @@ import { AppComponent } from '@app/app.component';
 import { MessageService } from '@services/message.service';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { BehaviorSubjectTestComponent } from './behavior-subject-test/behavior-subject-test.component';
+import { SortComponent } from './sort/sort.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppRoutingModule.components,
     BehaviorSubjectComponent,
-    BehaviorSubjectTestComponent
+    BehaviorSubjectTestComponent,
+    SortComponent
   ],
   imports: [
     BrowserModule,
