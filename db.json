@@ -1,26 +1,128 @@
 {
-    "users": [
-        {"id": 1, "name": "Tauhidul", "gender": "Male", "userName": "tauhidul2644", "email":"tuhin2083@yopmail.com", "website":"tuhin.com"},
-        {"id": 2, "name": "Azmir", "gender": "Male", "userName": "tauhidul2644", "email":"Azmir@yopmail.com", "website":"Azmir.com"},
-        {"id": 3, "name": "Arafat", "gender": "Male", "userName": "tauhidul2644",        "email":"Arafat@yopmail.com", "website":"Arafat.com"},
-        {"id": 4, "name": "Khadiza", "gender": "Female", "userName": "tauhidul2644",        "email":"Khadiza@yopmail.com", "website":"Khadiza.com"},
-        {"id": 5, "name": "Towkir", "gender": "Male", "userName": "tauhidul2644",     "email":"Towkir@yopmail.com", "website":"Towkir.com"},
-        {"id": 6, "name": "Tomal", "gender": "Male", "userName": "tauhidul2644",       "email":"Tomal@yopmail.com", "website":"Tomal.com"},
-        {"id": 7, "name": "Jomila", "gender": "Female", "userName": "tauhidul2644",       "email":"Jomila@yopmail.com", "website":"Jomila.com"},
-        {"id": 8, "name": "Faisal", "gender": "Male", "userName": "tauhidul2644",       "email":"Faisal@yopmail.com", "website":"Faisal.com"},
-        {"id": 9, "name": "Jannati", "gender": "Female", "userName": "tauhidul2644",       "email":"Jannati@yopmail.com", "website":"Jannati.com"},
-        {"id": 10, "name": "Anup", "gender": "Male", "userName": "tauhidul2644",       "email":"Anup@yopmail.com", "website":"Anup.com"},
-        {"id": 11, "name": "Ashish", "gender": "Male", "userName": "tauhidul2644",       "email":"Ashish@yopmail.com", "website":"Ashish.com"},
-        {"id": 12, "name": "Tania", "gender": "Female", "userName": "tauhidul2644",       "email":"Tania@yopmail.com", "website":"Tania.com"},
-        {"id": 13, "name": "Neeraj", "gender": "Male", "userName": "tauhidul2644",       "email":"Neeraj@yopmail.com", "website":"Neeraj.com"},
-        {"id": 14, "name": "Raju", "gender": "Male", "userName": "tauhidul2644",       "email":"Raju@yopmail.com", "website":"Raju.com"},
-        {"id": 15, "name": "Rokeya", "gender": "Female", "userName": "tauhidul2644",       "email":"Rokeya@yopmail.com", "website":"Rokeya.com"}
-    ],
-    "posts":[
-        { "code": "2021", "name": "Tauhidul", "salary": 1000, "role":"admin"},
-        { "code": "2022", "name": "Maleka", "salary": 1020, "role":"admin"}
-    ]
-
+  "users": [
+    {
+      "id": 1,
+      "name": "Tauhidul",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "tuhin2083@yopmail.com",
+      "website": "tuhin.com"
+    },
+    {
+      "id": 2,
+      "name": "Azmir",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "Azmir@yopmail.com",
+      "website": "Azmir.com"
+    },
+    {
+      "id": 3,
+      "name": "Arafat",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "Arafat@yopmail.com",
+      "website": "Arafat.com"
+    },
+    {
+      "id": 4,
+      "name": "Khadiza",
+      "gender": "Female",
+      "userName": "tauhidul2644",
+      "email": "Khadiza@yopmail.com",
+      "website": "Khadiza.com"
+    },
+    {
+      "id": 5,
+      "name": "Towkir",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "Towkir@yopmail.com",
+      "website": "Towkir.com"
+    },
+    {
+      "id": 6,
+      "name": "Tomal",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "Tomal@yopmail.com",
+      "website": "Tomal.com"
+    },
+    {
+      "id": 7,
+      "name": "Jomila",
+      "gender": "Female",
+      "userName": "tauhidul2644",
+      "email": "Jomila@yopmail.com",
+      "website": "Jomila.com"
+    },
+    {
+      "id": 8,
+      "name": "Faisal",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "Faisal@yopmail.com",
+      "website": "Faisal.com"
+    },
+    {
+      "id": 9,
+      "name": "Jannati",
+      "gender": "Female",
+      "userName": "tauhidul2644",
+      "email": "Jannati@yopmail.com",
+      "website": "Jannati.com"
+    },
+    {
+      "id": 10,
+      "name": "Anup",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "Anup@yopmail.com",
+      "website": "Anup.com"
+    },
+    {
+      "id": 11,
+      "name": "Ashish",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "Ashish@yopmail.com",
+      "website": "Ashish.com"
+    },
+    {
+      "id": 12,
+      "name": "Tania",
+      "gender": "Female",
+      "userName": "tauhidul2644",
+      "email": "Tania@yopmail.com",
+      "website": "Tania.com"
+    },
+    {
+      "id": 13,
+      "name": "Neeraj",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "Neeraj@yopmail.com",
+      "website": "Neeraj.com"
+    },
+    {
+      "id": 14,
+      "name": "Raju",
+      "gender": "Male",
+      "userName": "tauhidul2644",
+      "email": "Raju@yopmail.com",
+      "website": "Raju.com"
+    },
+    {
+      "id": 15,
+      "name": "Rokeya",
+      "gender": "Female",
+      "userName": "tauhidul2644",
+      "email": "Rokeya@yopmail.com",
+      "website": "Rokeya.com"
+    }
+  ],
+  "posts": [
+    { "code": "2021", "name": "Tauhidul", "salary": 1000, "role": "admin" },
+    { "code": "2022", "name": "Maleka", "salary": 1020, "role": "admin" }
+  ]
 }
-
-
