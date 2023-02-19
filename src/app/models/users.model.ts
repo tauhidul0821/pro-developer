@@ -1,4 +1,4 @@
-export interface IUsers{
-    name: string;
-    age: number;
+export interface IUsers {
+  name: string;
+  age: number;
 }

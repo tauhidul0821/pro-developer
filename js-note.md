@@ -1,4 +1,3 @@
-
 ## Object.create
 
 ```JS
@@ -8,7 +7,7 @@ var person = {
         var currentYear = new Date().getFullYear();
         var age = currentYear - this.yourBirthYear;
         console.log(age);
-        return age;
+         return age;
     }
 }
 
@@ -28,11 +27,12 @@ tuhin.calculateAge();
 */
 
 ```
+
 ```JS
-    
+
 //    Object.assign
 const target = {
-    a: 1, 
+    a: 1,
     b: 2,
     name: 'tuhin'
 }
@@ -51,6 +51,7 @@ console.log(target);
 ```
 
 ## Object.keys
+
 ```JS
 
 // Object.keys
@@ -62,8 +63,9 @@ console.log('Keys :- ', objKeys);
 ```
 
 ## Object.values
+
 ```JS
-    
+
 const sales = {
     John: 30,
     Sally: 40,
@@ -81,11 +83,12 @@ function sumSales(obj){
 }
 
 console.log(sumSales(sales));
-/* output: 
+/* output:
     204
 */
 
 ```
+
 ## Object.entries
 
 ```JS
@@ -96,15 +99,13 @@ console.log(sumSales(sales));
         Jim: 50,
         Kim: 49
     };
-    
+
 function personSales(obj){
     for(let [key, value] of Object.entries(obj)){
         console.log(`${key} had ${value} sales`);
     }
 }
 ```
-
-
 
 ```JS
 
@@ -144,7 +145,7 @@ function personSales(obj){
 
 //    Object.assign
 const target = {
-    a: 1, 
+    a: 1,
     b: 2,
     name: 'tuhin'
 }
@@ -170,13 +171,13 @@ console.log('Keys :- ', objKeys);
 
 const objValues = Object.values(source);
 console.log('Values: ', objValues);
-/*Output: 
+/*Output:
     [4, 5, 'Khadiza']
 */
 
 const objEntries = Object.entries(source);
 console.log(objEntries);
-/*output: 
+/*output:
 [ ['b', 4],['c', 5],['name', 'Khadiza'] ]
 */
 
@@ -197,7 +198,7 @@ function sumSales(obj){
 }
 
 console.log(sumSales(sales));
-/* output: 
+/* output:
     204
 */
 
@@ -206,7 +207,7 @@ function personSales(obj){
         console.log(`${key} had ${value} sales`);
     }
 }
-/* Output: 
+/* Output:
     John had 30 sales
     Sally had 40 sales
     Rob had 35 sales

@@ -12,10 +12,6 @@ export class AppComponent implements OnInit {
     name: 'tauhidshff',
     age: 24,
   };
-  // constructor(private dataShareService: DataShareService){
-  //   this.dataShareService.saveData.next(this.obj)
-  //   console.log('Allahu akbar');
-  // }
 
   ngOnInit(): void {
     console.log('first time call this functionLL:L');

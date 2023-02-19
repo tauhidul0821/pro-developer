@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from '@app/about/about.component';
 import { HomeComponent } from '@app/home/home.component';
 import { MessageComponent } from '@app/message/message.component';
-import {MapComponent} from '@app/map/map.component';
+import { MapComponent } from '@app/map/map.component';
 import { ListComponent } from '@app/list/list.component';
 import { ObservableComponent } from '@app/observable/observable.component';
 import { FromEventComponent } from '@app/from-event/from-event.component';
@@ -37,56 +37,59 @@ import { SortComponent } from './sort/sort.component';
 const routes: Routes = [
   {
     path: '',
-    component: ObservableComponent,  children: [
-      {path: '', component: ListComponent},
-      {path: 'from-event', component: FromEventComponent},
-      {path: 'subject', component: SubjectComponent},
-      {path: 'interval', component: IntervalComponent},
-      {path: 'of-from', component: OfFromComponent},
-      {path: 'pluck', component: PluckComponent},
-      {path: 'retry', component: RetryComponent},
-      {path: 'debounce', component: DebounceTimeComponent},
-      {path: 'replay-subject', component: ReplaySubjectComponent},
-      {path: 'share-replay', component: ShareReplayComponent},
-      {path: 'filter', component: FilterComponent},
-      {path: 'async-subject', component: AsyncSubjectComponent},
-      {path: 'concat-merge', component: ConcatMergeComponent},
-      {path: 'take', component: TakeComponent},
-      {path: 'home', component: HomeComponent},
-      {path: 'behavior-subject', component: BehaviorSubjectComponent},
-      {path: 'behavior-subject-test', component: BehaviorSubjectTestComponent},
-      {path: 'sort', component: SortComponent}
-    ]
+    component: ObservableComponent,
+    children: [
+      { path: '', component: ListComponent },
+      { path: 'from-event', component: FromEventComponent },
+      { path: 'subject', component: SubjectComponent },
+      { path: 'interval', component: IntervalComponent },
+      { path: 'of-from', component: OfFromComponent },
+      { path: 'pluck', component: PluckComponent },
+      { path: 'retry', component: RetryComponent },
+      { path: 'debounce', component: DebounceTimeComponent },
+      { path: 'replay-subject', component: ReplaySubjectComponent },
+      { path: 'share-replay', component: ShareReplayComponent },
+      { path: 'filter', component: FilterComponent },
+      { path: 'async-subject', component: AsyncSubjectComponent },
+      { path: 'concat-merge', component: ConcatMergeComponent },
+      { path: 'take', component: TakeComponent },
+      { path: 'home', component: HomeComponent },
+      { path: 'behavior-subject', component: BehaviorSubjectComponent },
+      {
+        path: 'behavior-subject-test',
+        component: BehaviorSubjectTestComponent,
+      },
+      { path: 'sort', component: SortComponent },
+    ],
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
   },
   {
     path: 'message',
-    component: MessageComponent
+    component: MessageComponent,
   },
   {
     path: 'map',
-    component: MapComponent
+    component: MapComponent,
   },
   {
     path: 'list',
-    component: ListComponent
+    component: ListComponent,
   },
   {
-    path: 'observable', component: ObservableComponent, children: [
-      {path: '', component: ListComponent}
-    ]
-  }
-
+    path: 'observable',
+    component: ObservableComponent,
+    children: [{ path: '', component: ListComponent }],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { 
+export class AppRoutingModule {
   static components = [
     AboutComponent,
     MessageComponent,

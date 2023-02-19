@@ -15,14 +15,10 @@ import { SortComponent } from './sort/sort.component';
     AppRoutingModule.components,
     BehaviorSubjectComponent,
     BehaviorSubjectTestComponent,
-    SortComponent
+    SortComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [MessageService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

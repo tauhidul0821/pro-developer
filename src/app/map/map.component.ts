@@ -1,34 +1,38 @@
-import {Component, OnInit} from '@angular/core';
-import {filter, find, interval, of, switchMap, map, tap} from "rxjs";
+import { Component, OnInit } from '@angular/core';
+import { filter, find, interval, of, switchMap, map, tap } from 'rxjs';
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  styleUrls: ['./map.component.scss'],
 })
 export class MapComponent implements OnInit {
-
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {
     const broadCastVideo = interval(1000);
     const object = of({
       name: 'Tauhidul',
       age: 24,
-      hobie: [{id: 1, title: 'Art'}, {id: 2, title: 'Singer'}, {id: 3, title: 'Programmer'}]
-    })
+      hobie: [
+        { id: 1, title: 'Art' },
+        { id: 2, title: 'Singer' },
+        { id: 3, title: 'Programmer' },
+      ],
+    });
 
-    object.pipe(
-      // find(x => x.age === 24),
-      switchMap(x => x.hobie),
-      map(response => ({
-        ...response,
-        firstName: `${response.title} ${response.title}`
-      })),
-    ).subscribe(res => {
-      console.log('Awesome :- ', res);
-    })
+    object
+      .pipe(
+        // find(x => x.age === 24),
+        switchMap((x) => x.hobie),
+        map((response) => ({
+          ...response,
+          firstName: `${response.title} ${response.title}`,
+        }))
+      )
+      .subscribe((res) => {
+        console.log('Awesome :- ', res);
+      });
   }
 
   /*
@@ -82,8 +86,4 @@ export class MapComponent implements OnInit {
 
     }
     */
-
-
-
-
 }

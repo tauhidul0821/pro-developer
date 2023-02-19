@@ -5,18 +5,17 @@ import { MessageService } from '@services/message.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
   users: IUsers;
 
-  constructor(private messageService: MessageService) { }
+  constructor(private messageService: MessageService) {}
 
   ngOnInit(): void {
-    this.messageService.messageStore.subscribe(res => {
-     // console.log('about :- ', res);
+    this.messageService.messageStore.subscribe((res) => {
+      // console.log('about :- ', res);
       this.users = res;
     });
   }
-
 }
