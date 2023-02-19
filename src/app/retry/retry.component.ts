@@ -12,6 +12,7 @@ export class RetryComponent implements OnInit, OnDestroy {
   person: IUsers;
   rightUrl: string = 'https://jsonplaceholder.typicode.com/users';
   wrongUrl: string = 'https://jsonplaceholder.typicode.com/users-wrong';
+  myServer: string = 'http://localhost:3000/users';
   status: string = 'No Data';
 
   private destroy$ = new Subject<void>();
@@ -25,7 +26,7 @@ export class RetryComponent implements OnInit, OnDestroy {
 // REF: https://stackoverflow.com/questions/51898005/rxjs6-filter-array-of-objects
   fetchData(){
     this.status = 'Fetching data...';
-    this.http.get(this.wrongUrl).pipe(
+    this.http.get(this.myServer).pipe(
       switchMap((res: any) => res),
       take(1),
       retryWhen(err => err.pipe(
@@ -60,7 +61,7 @@ export class RetryComponent implements OnInit, OnDestroy {
 interface IUsers{
   id: number;
   name: string;
-  username: string;
+  userName: string;
   email: string;
   website: string;
 }
