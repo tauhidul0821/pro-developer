@@ -5,7 +5,9 @@
     "baseUrl": "./",
     "paths": {
       "@app/*": ["src/app/*"],
-      "@services": ["src/app/services/index.ts"]
+      "@services": ["src/app/services/index.ts"],
+      "@utils": ["src/app/utils/index.ts"],
+      "@environment": ["src/environments/environment"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
