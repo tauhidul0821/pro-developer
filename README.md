@@ -28,7 +28,7 @@
 | 24   | combileLatest                         | ------- |
 | 25   | zip and forkJoin                      | ------- |
 | 26   | catchError throwError                 | ------- |
-| 27   | -------                               | ------- |
+| 27   | HttpError get form intercepter        | ------- |
 | 28   | -------                               | ------- |
 | 29   | -------                               | ------- |
 | 30   | -------                               | ------- |
