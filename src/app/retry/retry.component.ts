@@ -1,18 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {
-  filter,
-  take,
-  tap,
-  map,
-  switchMap,
-  toArray,
-  retry,
-  retryWhen,
-  delay,
-  scan,
-  takeUntil,
-} from 'rxjs/operators';
+import { filter, take, tap, map, switchMap, toArray, retry, retryWhen, delay, scan, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 
 @Component({
