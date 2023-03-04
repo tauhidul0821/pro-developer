@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { DesignService } from '@app/services/design.service';
-import { from, fromEvent, interval, Observable, timer } from 'rxjs';
-import { map, take, takeLast, takeUntil } from 'rxjs/operators';
+import {Component, OnInit} from '@angular/core';
+import {DesignService} from '@app/services/design.service';
+import {from, fromEvent, interval, Observable, timer} from 'rxjs';
+import {map, take, takeLast, takeUntil} from 'rxjs/operators';
 
 @Component({
   selector: 'app-take',
@@ -41,8 +41,8 @@ export class TakeComponent implements OnInit {
     console.log('takeUntilExample:: ');
     this.intervalSource = interval(1000);
 
-    let condition1 = timer(6000);
-    let condition2 = fromEvent(document, 'click');
+    const condition1 = timer(6000);
+    const condition2 = fromEvent(document, 'click');
 
     this.intervalSource
       .pipe(

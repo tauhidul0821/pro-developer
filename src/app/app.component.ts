@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { DataShareService } from './services/data-share.service';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
