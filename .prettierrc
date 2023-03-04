@@ -1,9 +1,9 @@
 {
   "printWidth": 120,
   "tabWidth": 2,
-  "tabs": true,
+  "tabs": false,
   "singleQuote": true,
   "semicolon": true,
   "quoteProps": "preserve",
-  "bracketSpacing": false
+  "bracketSpacing": true
 }
