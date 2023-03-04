@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { filter, find, interval, of, switchMap, map, tap } from 'rxjs';
+import {Component, OnInit} from '@angular/core';
+import {filter, find, interval, of, switchMap, map, tap} from 'rxjs';
 
 @Component({
   selector: 'app-map',
@@ -15,9 +15,9 @@ export class MapComponent implements OnInit {
       name: 'Tauhidul',
       age: 24,
       hobie: [
-        { id: 1, title: 'Art' },
-        { id: 2, title: 'Singer' },
-        { id: 3, title: 'Programmer' },
+        {id: 1, title: 'Art'},
+        {id: 2, title: 'Singer'},
+        {id: 3, title: 'Programmer'},
       ],
     });
 
