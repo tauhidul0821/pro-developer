@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { DesignService } from '@app/services/design.service';
-import { Subscription, timer } from 'rxjs';
-import { interval } from 'rxjs';
+import {Component, OnInit} from '@angular/core';
+import {DesignService} from '@app/services/design.service';
+import {Subscription, timer} from 'rxjs';
+import {interval} from 'rxjs';
 
 @Component({
   selector: 'app-interval',

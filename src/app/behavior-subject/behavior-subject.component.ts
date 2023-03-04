@@ -1,6 +1,6 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { DataShareService } from '@app/services/data-share.service';
-import { MessageService } from '@app/services/message.service';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {DataShareService} from '@app/services/data-share.service';
+import {MessageService} from '@app/services/message.service';
 
 @Component({
   selector: 'app-behavior-subject',

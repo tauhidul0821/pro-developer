@@ -9,7 +9,8 @@
     "test": "ng test",
     "server": "json-server --watch db.json",
     "client": "ng serve -o",
-    "dev": "concurrently -k \"npm run server\" \"npm run client\""
+    "dev": "concurrently -k \"npm run server\" \"npm run client\"",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
@@ -25,14 +26,22 @@
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
-  },
+  }, 
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.1",
+    "@angular-eslint/builder": "15.2.1",
+    "@angular-eslint/eslint-plugin": "15.2.1",
+    "@angular-eslint/eslint-plugin-template": "15.2.1",
+    "@angular-eslint/schematics": "15.2.1",
+    "@angular-eslint/template-parser": "15.2.1",
     "@angular/cli": "^15.2.1",
     "@angular/compiler-cli": "^15.2.1",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "5.48.2",
+    "@typescript-eslint/parser": "5.48.2",
     "concurrently": "^7.6.0",
+    "eslint": "^8.33.0",
     "husky": "^4.3.8",
     "jasmine-core": "~3.10.0",
     "karma": "~6.3.0",

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { from, of } from 'rxjs';
-import { map, toArray } from 'rxjs/operators';
+import {Component, OnInit} from '@angular/core';
+import {from, of} from 'rxjs';
+import {map, toArray} from 'rxjs/operators';
 
 @Component({
   selector: 'app-sort',
