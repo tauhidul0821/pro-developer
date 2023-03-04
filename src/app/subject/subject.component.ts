@@ -1,5 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { MessageService } from '@services';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {MessageService} from '@services';
 
 @Component({
   selector: 'app-subject',

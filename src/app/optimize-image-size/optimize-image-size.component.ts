@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-optimize-image-size',
@@ -44,7 +44,7 @@ export class OptimizeImageSizeComponent implements OnInit {
             });
 
             this.errorMessage = '';
-            this.images.unshift({ imageUrl, imageName, imageSize });
+            this.images.unshift({imageUrl, imageName, imageSize});
             this.imageFiles.unshift(newImageFile);
           });
         };
@@ -75,6 +75,6 @@ export class OptimizeImageSizeComponent implements OnInit {
     for (var i = 0; i < binary.length; i++) {
       array.push(binary.charCodeAt(i));
     }
-    return new Blob([new Uint8Array(array)], { type: 'image/jpeg' });
+    return new Blob([new Uint8Array(array)], {type: 'image/jpeg'});
   }
 }

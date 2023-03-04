@@ -122,7 +122,7 @@
     }
   ],
   "posts": [
-    { "code": "2021", "name": "Tauhidul", "salary": 1000, "role": "admin" },
-    { "code": "2022", "name": "Maleka", "salary": 1020, "role": "admin" }
+    {"code": "2021", "name": "Tauhidul", "salary": 1000, "role": "admin"},
+    {"code": "2022", "name": "Maleka", "salary": 1020, "role": "admin"}
   ]
 }

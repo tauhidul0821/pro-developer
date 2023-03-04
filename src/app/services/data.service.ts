@@ -1,4 +1,4 @@
-import { from, of } from 'rxjs';
+import {of} from 'rxjs';
 
 export const bio = of([
   {
