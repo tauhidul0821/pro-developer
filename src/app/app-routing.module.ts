@@ -33,6 +33,7 @@ import { CatchErrorComponent } from '@app/catch-error/catch-error.component';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { BehaviorSubjectTestComponent } from './behavior-subject-test/behavior-subject-test.component';
 import { SortComponent } from './sort/sort.component';
+import { OptimizeImageSizeComponent } from './optimize-image-size/optimize-image-size.component';
 
 const routes: Routes = [
   {
@@ -60,6 +61,7 @@ const routes: Routes = [
         component: BehaviorSubjectTestComponent,
       },
       { path: 'sort', component: SortComponent },
+      { path: 'optimize-image', component: OptimizeImageSizeComponent },
     ],
   },
   {

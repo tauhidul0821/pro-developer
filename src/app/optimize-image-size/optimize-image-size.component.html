@@ -1,0 +1,14 @@
+<p>optimize-image-size works!</p>
+<div class="upload-btn-wrapper">
+  <button class="rounded btn btn-secondary btn-lg btn-block">
+    <i class="fa fa-cloud-upload pr-2"></i>
+    <span>Select Image</span>
+    <input
+      type="file"
+      multiple
+      class="custom-file-input image-uploader"
+      accept="image/*"
+      (change)="onSelectFile($event)"
+    />
+  </button>
+</div>
