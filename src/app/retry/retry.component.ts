@@ -1,30 +1,27 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, DestroyRef, OnInit, inject} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {filter, take, tap, map, switchMap, toArray, retry, retryWhen, delay, scan, takeUntil} from 'rxjs/operators';
-import {Subject} from 'rxjs';
+import {take, switchMap, retryWhen, delay, scan} from 'rxjs/operators';
+import {RetryDataService} from '@services';
+import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-retry',
   templateUrl: './retry.component.html',
   styleUrls: ['./retry.component.scss'],
 })
-export class RetryComponent implements OnInit, OnDestroy {
+export class RetryComponent implements OnInit {
   person: IUsers;
-  rightUrl: string = 'https://jsonplaceholder.typicode.com/users';
-  wrongUrl: string = 'https://jsonplaceholder.typicode.com/users-wrong';
-  myServer: string = 'http://localhost:3000/users';
   status: string = 'No Data';
+  destroyRef = inject(DestroyRef);
 
-  private destroy$ = new Subject<void>();
-
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private retryDataService: RetryDataService) {}
 
   ngOnInit(): void {}
-  // REF: https://stackoverflow.com/questions/51898005/rxjs6-filter-array-of-objects
+
   fetchData() {
     this.status = 'Fetching data...';
-    this.http
-      .get(this.myServer)
+    this.retryDataService
+      .getRetryData()
       .pipe(
         switchMap((res: any) => res),
         take(1),
@@ -33,7 +30,7 @@ export class RetryComponent implements OnInit, OnDestroy {
             delay(3000),
             scan((retryCount: any) => {
               console.log(retryCount);
-              if (retryCount >= 5) {
+              if (retryCount >= 4) {
                 this.status = 'Data fatching failed';
                 throw err;
               } else {
@@ -44,16 +41,12 @@ export class RetryComponent implements OnInit, OnDestroy {
             }, 0)
           )
         ),
-        takeUntil(this.destroy$)
+        takeUntilDestroyed(this.destroyRef)
       )
       .subscribe((res: any) => {
         this.status = 'Success';
         this.person = res;
       });
-  }
-
-  ngOnDestroy() {
-    this.destroy$.next();
   }
 }
 
