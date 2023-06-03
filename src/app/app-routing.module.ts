@@ -34,6 +34,7 @@ import {BehaviorSubjectComponent} from './behavior-subject/behavior-subject.comp
 import {BehaviorSubjectTestComponent} from './behavior-subject-test/behavior-subject-test.component';
 import {SortComponent} from './sort/sort.component';
 import {OptimizeImageSizeComponent} from './optimize-image-size/optimize-image-size.component';
+import {LodashExComponent} from './lodash-ex/lodash-ex.component';
 
 const routes: Routes = [
   {
@@ -58,38 +59,39 @@ const routes: Routes = [
       {path: 'behavior-subject', component: BehaviorSubjectComponent},
       {
         path: 'behavior-subject-test',
-        component: BehaviorSubjectTestComponent,
+        component: BehaviorSubjectTestComponent
       },
       {path: 'sort', component: SortComponent},
       {path: 'optimize-image', component: OptimizeImageSizeComponent},
-    ],
+      {path: 'lodash', component: LodashExComponent}
+    ]
   },
   {
     path: 'about',
-    component: AboutComponent,
+    component: AboutComponent
   },
   {
     path: 'message',
-    component: MessageComponent,
+    component: MessageComponent
   },
   {
     path: 'map',
-    component: MapComponent,
+    component: MapComponent
   },
   {
     path: 'list',
-    component: ListComponent,
+    component: ListComponent
   },
   {
     path: 'observable',
     component: ObservableComponent,
-    children: [{path: '', component: ListComponent}],
-  },
+    children: [{path: '', component: ListComponent}]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {
   static components = [
@@ -120,5 +122,9 @@ export class AppRoutingModule {
     CombineLatestComponent,
     ZipForkjoinComponent,
     CatchErrorComponent,
+    BehaviorSubjectComponent,
+    BehaviorSubjectTestComponent,
+    SortComponent,
+    LodashExComponent
   ];
 }
