@@ -4,7 +4,7 @@ import {MessageService} from '@services';
 @Component({
   selector: 'app-subject',
   templateUrl: './subject.component.html',
-  styleUrls: ['./subject.component.scss'],
+  styleUrls: ['./subject.component.scss']
 })
 export class SubjectComponent implements OnInit {
   constructor(private messageService: MessageService) {}
@@ -15,7 +15,7 @@ export class SubjectComponent implements OnInit {
   saveMessage($event: any) {
     let obj = {
       name: this.fondovalor.nativeElement.value,
-      age: Math.floor(Math.random() * 60 + 1),
+      age: Math.floor(Math.random() * 60 + 1)
     };
     this.messageService.messageStore.next(obj);
   }

@@ -4,7 +4,7 @@ import {filter, find, interval, of, switchMap, map, tap} from 'rxjs';
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss'],
+  styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
   constructor() {}
@@ -17,8 +17,8 @@ export class MapComponent implements OnInit {
       hobie: [
         {id: 1, title: 'Art'},
         {id: 2, title: 'Singer'},
-        {id: 3, title: 'Programmer'},
-      ],
+        {id: 3, title: 'Programmer'}
+      ]
     });
 
     object
@@ -27,7 +27,7 @@ export class MapComponent implements OnInit {
         switchMap((x) => x.hobie),
         map((response) => ({
           ...response,
-          firstName: `${response.title} ${response.title}`,
+          firstName: `${response.title} ${response.title}`
         }))
       )
       .subscribe((res) => {
