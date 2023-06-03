@@ -5,7 +5,7 @@ import {MessageService} from '@app/services/message.service';
 @Component({
   selector: 'app-behavior-subject',
   templateUrl: './behavior-subject.component.html',
-  styleUrls: ['./behavior-subject.component.scss'],
+  styleUrls: ['./behavior-subject.component.scss']
 })
 export class BehaviorSubjectComponent implements OnInit {
   constructor(private dataShareService: DataShareService) {}
@@ -16,7 +16,7 @@ export class BehaviorSubjectComponent implements OnInit {
   saveMessage() {
     let obj = {
       name: this.fondovalor.nativeElement.value,
-      age: 25, //Math.floor((Math.random() * 60) + 1)
+      age: 25 //Math.floor((Math.random() * 60) + 1)
     };
     this.dataShareService.saveData.next(obj);
   }

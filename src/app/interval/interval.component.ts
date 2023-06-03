@@ -6,7 +6,7 @@ import {interval} from 'rxjs';
 @Component({
   selector: 'app-interval',
   templateUrl: './interval.component.html',
-  styleUrls: ['./interval.component.scss'],
+  styleUrls: ['./interval.component.scss']
 })
 export class IntervalComponent implements OnInit {
   intervalMsg: string;

@@ -5,7 +5,7 @@ import {toArray, filter} from 'rxjs/operators';
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
-  styleUrls: ['./filter.component.scss'],
+  styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent implements OnInit {
   data01: IMember[];
@@ -41,7 +41,7 @@ export class FilterComponent implements OnInit {
     {id: 12, name: 'Tania', gender: 'Female'},
     {id: 13, name: 'Neeraj', gender: 'Male'},
     {id: 14, name: 'Raju', gender: 'Male'},
-    {id: 15, name: 'Rokeya', gender: 'Female'},
+    {id: 15, name: 'Rokeya', gender: 'Female'}
   ];
 
   ngOnInit(): void {

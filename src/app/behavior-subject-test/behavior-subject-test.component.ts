@@ -4,7 +4,7 @@ import {DataShareService} from '@app/services/data-share.service';
 @Component({
   selector: 'app-behavior-subject-test',
   templateUrl: './behavior-subject-test.component.html',
-  styleUrls: ['./behavior-subject-test.component.scss'],
+  styleUrls: ['./behavior-subject-test.component.scss']
 })
 export class BehaviorSubjectTestComponent implements OnInit {
   subjectData: any;

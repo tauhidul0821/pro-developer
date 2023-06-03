@@ -4,7 +4,7 @@ import {filter, take, tap, map, switchMap, toArray, retry, retryWhen, delay, sca
 import {Subject, Observable} from 'rxjs';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class RetryDataService {
   rightUrl: string = 'https://jsonplaceholder.typicode.com/users';
