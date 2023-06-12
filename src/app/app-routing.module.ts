@@ -35,6 +35,8 @@ import {BehaviorSubjectTestComponent} from './behavior-subject-test/behavior-sub
 import {SortComponent} from './sort/sort.component';
 import {OptimizeImageSizeComponent} from './optimize-image-size/optimize-image-size.component';
 import {LodashExComponent} from './lodash-ex/lodash-ex.component';
+import {AnguFormComponent} from './angu-form/angu-form.component';
+import {AddressComponent} from './angu-form/components/address/address.component';
 
 const routes: Routes = [
   {
@@ -63,7 +65,8 @@ const routes: Routes = [
       },
       {path: 'sort', component: SortComponent},
       {path: 'optimize-image', component: OptimizeImageSizeComponent},
-      {path: 'lodash', component: LodashExComponent}
+      {path: 'lodash', component: LodashExComponent},
+      {path: 'form', component: AnguFormComponent}
     ]
   },
   {
@@ -125,6 +128,8 @@ export class AppRoutingModule {
     BehaviorSubjectComponent,
     BehaviorSubjectTestComponent,
     SortComponent,
-    LodashExComponent
+    LodashExComponent,
+    AnguFormComponent,
+    AddressComponent
   ];
 }
