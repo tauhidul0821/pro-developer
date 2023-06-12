@@ -87,7 +87,7 @@ export class UniquevalidatorService {
           return this.httpClient.get(firstApiUrl).pipe(
             switchMap((response: any) => {
               console.log('first API res, ', response);
-              if (response.id === 2) {
+              if (response.id === 1) {
                 // Call the second API if the response is true
                 return this.httpClient.get(secondApiUrl).pipe(
                   map((secondApiResponse: any) => {
