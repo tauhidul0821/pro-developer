@@ -4,6 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import {asyncValidator} from './validation-service';
 import {UniquevalidatorService} from './unique-validator.service';
 import {distinctUntilChanged} from 'rxjs/operators';
+import {markFormGroupTouched} from '@utils';
 
 @Component({
   selector: 'app-angu-form',
@@ -44,8 +45,7 @@ export class AnguFormComponent implements OnInit {
 
   onSubmit() {
     if (!this.myForm.valid) {
-      this.myForm.dirty;
-      this.myForm.touched;
+      markFormGroupTouched(this.myForm);
       console.log('form invalid');
       return;
     }
