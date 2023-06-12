@@ -1,5 +1,4 @@
 
-/*
       return timer(1000).pipe(distinctUntilChanged(), switchMap(() => {
           if (isEdit) {
             return this.api.get(`${UniquevalidatorService.path.merchantPath}/${control.value}/exist`).pipe(
@@ -34,4 +33,4 @@
 
           }
         });
-      */
+
