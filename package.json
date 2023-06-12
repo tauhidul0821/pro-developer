@@ -38,6 +38,7 @@
     "@angular/cli": "^16.0.1",
     "@angular/compiler-cli": "^16.0.1",
     "@types/jasmine": "~3.10.0",
+    "@types/lodash": "^4.14.195",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.48.2",
     "@typescript-eslint/parser": "5.48.2",
