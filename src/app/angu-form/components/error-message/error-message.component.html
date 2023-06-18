@@ -1,0 +1,24 @@
+<!-- Error for First Name -->
+<div
+  *ngIf="(form.get('firstName').touched || form.get('firstName').dirty) && controlName === 'firstName'"
+  class="feedback-info"
+>
+  <div *ngIf="form.get('firstName').hasError('required')">First name is required</div>
+  <div *ngIf="form.get('firstName').hasError('minlength')">First name must be at least 2 characters long</div>
+</div>
+
+<!-- Error for Last Name -->
+<div
+  *ngIf="(form.get('lastName').touched || form.get('lastName').dirty) && controlName === 'lastName'"
+  class="feedback-info"
+>
+  <div *ngIf="form.get('lastName').hasError('required')">Last name is required</div>
+  <div *ngIf="form.get('lastName').hasError('minlength')">Last name must be at least 2 characters long</div>
+</div>
+
+<!-- Error for Email -->
+<div *ngIf="(form.get('email').touched || form.get('email').dirty) && controlName === 'email'" class="feedback-info">
+  <div *ngIf="form.get('email').hasError('required')">Email is required</div>
+  <div *ngIf="form.get('email').hasError('email')">Invalid email format</div>
+  <div *ngIf="form.get('email').hasError('asyncError')">Async validation failed. Please try again.</div>
+</div>

@@ -92,7 +92,7 @@ export class UniquevalidatorService {
                 return this.httpClient.get(secondApiUrl).pipe(
                   map((secondApiResponse: any) => {
                     console.log('secondApiResponse :- ', secondApiResponse);
-                    if (secondApiResponse.id === 1) {
+                    if (secondApiResponse.id === 2) {
                       return {asyncError: true}; // Return an error object if the second API response is true
                     } else {
                       return null; // Return null if the second API response is false

@@ -30,12 +30,12 @@ export class AnguFormComponent implements OnInit {
       )
     });
 
-    this.myForm
-      .get('firstName')
-      ?.valueChanges.pipe(distinctUntilChanged())
-      .subscribe((name: any) => {
-        console.log(this.myForm);
-      });
+    // this.myForm
+    //   .get('firstName')
+    //   ?.valueChanges.pipe(distinctUntilChanged())
+    //   .subscribe((name: any) => {
+    //     console.log(this.myForm);
+    //   });
   }
 
   isControlInvalid(controlName: string): boolean {
