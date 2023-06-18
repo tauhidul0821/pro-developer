@@ -19,6 +19,7 @@
     <span *ngIf="isControlInvalid('email')"><app-error-message [controlName]="'email'"></app-error-message></span>
   </div>
 
-  <button type="submit" [disabled]="!myForm.valid">Add New</button>
+  <!-- <button type="submit" [disabled]="!myForm.valid">Add New</button> -->
   <!-- <button type="submit" [disabled]="myForm.pristine">Update</button> -->
+  <button type="submit" [disabled]="!isChangedFormValueF(myForm, oldValues)">Update</button>
 </form>
