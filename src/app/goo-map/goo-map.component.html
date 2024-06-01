@@ -17,5 +17,11 @@
   <button (click)="updateCoordinates(latitude, longitude)">Update Map</button>
 </div>
 
-<google-map height="450px" width="1000px" [options]="mapOptions" (mapInitialized)="handleMapInitialized($event)">
-</google-map>
+<!-- <google-map height="450px" width="1000px" [options]="mapOptions" (mapInitialized)="handleMapInitialized($event)">
+</google-map> -->
+
+<div style="height: 500px; width: 100%">
+  <google-map [center]="{lat: latitude, lng: longitude}" [zoom]="zoom">
+    <map-marker [position]="{lat: latitude, lng: longitude}"></map-marker>
+  </google-map>
+</div>
