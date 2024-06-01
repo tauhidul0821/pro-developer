@@ -37,6 +37,7 @@ import {OptimizeImageSizeComponent} from './optimize-image-size/optimize-image-s
 import {LodashExComponent} from './lodash-ex/lodash-ex.component';
 import {AnguFormComponent} from './angu-form/angu-form.component';
 import {AddressComponent} from './angu-form/components/address/address.component';
+import {GooMapComponent} from './goo-map/goo-map.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,7 @@ const routes: Routes = [
       {path: 'sort', component: SortComponent},
       {path: 'optimize-image', component: OptimizeImageSizeComponent},
       {path: 'lodash', component: LodashExComponent},
+      {path: 'map', component: GooMapComponent},
       {path: 'form', component: AnguFormComponent}
     ]
   },
@@ -130,6 +132,7 @@ export class AppRoutingModule {
     SortComponent,
     LodashExComponent,
     AnguFormComponent,
-    AddressComponent
+    AddressComponent,
+    GooMapComponent
   ];
 }

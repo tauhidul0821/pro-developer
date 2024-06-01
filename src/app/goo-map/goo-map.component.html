@@ -1,0 +1,21 @@
+<!--   
+<google-map height="450px"
+            width="1000px"
+            [center]="center"
+            [zoom]="zoom"
+            (mapClick)="moveMap($event)"
+            (mapMousemove)="move($event)">
+            
+</google-map> -->
+
+<div style="text-align: center">
+  <h1>Google Maps with Angular</h1>
+  <label for="latitude">Latitude:</label>
+  <input id="latitude" [(ngModel)]="latitude" placeholder="Enter Latitude" />
+  <label for="longitude">Longitude:</label>
+  <input id="longitude" [(ngModel)]="longitude" placeholder="Enter longitude" />
+  <button (click)="updateCoordinates(latitude, longitude)">Update Map</button>
+</div>
+
+<google-map height="450px" width="1000px" [options]="mapOptions" (mapInitialized)="handleMapInitialized($event)">
+</google-map>
