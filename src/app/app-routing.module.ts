@@ -32,6 +32,7 @@ import {ZipForkjoinComponent} from '@app/zip-forkjoin/zip-forkjoin.component';
 import {CatchErrorComponent} from '@app/catch-error/catch-error.component';
 import {BehaviorSubjectComponent} from './behavior-subject/behavior-subject.component';
 import {BehaviorSubjectTestComponent} from './behavior-subject-test/behavior-subject-test.component';
+import {BehaviorSubjectTest2Component} from './behavior-subject-test2/behavior-subject-test2.component';
 import {SortComponent} from './sort/sort.component';
 import {OptimizeImageSizeComponent} from './optimize-image-size/optimize-image-size.component';
 import {LodashExComponent} from './lodash-ex/lodash-ex.component';
@@ -63,6 +64,10 @@ const routes: Routes = [
       {
         path: 'behavior-subject-test',
         component: BehaviorSubjectTestComponent
+      },
+      {
+        path: 'behavior-subject-test2',
+        component: BehaviorSubjectTest2Component
       },
       {path: 'sort', component: SortComponent},
       {path: 'optimize-image', component: OptimizeImageSizeComponent},
@@ -129,6 +134,7 @@ export class AppRoutingModule {
     CatchErrorComponent,
     BehaviorSubjectComponent,
     BehaviorSubjectTestComponent,
+    BehaviorSubjectTest2Component,
     SortComponent,
     LodashExComponent,
     AnguFormComponent,
