@@ -5,7 +5,8 @@ import {map, toArray} from 'rxjs/operators';
 @Component({
   selector: 'app-sort',
   templateUrl: './sort.component.html',
-  styleUrls: ['./sort.component.scss']
+  styleUrls: ['./sort.component.scss'],
+  standalone: false
 })
 export class SortComponent implements OnInit {
   data = of([

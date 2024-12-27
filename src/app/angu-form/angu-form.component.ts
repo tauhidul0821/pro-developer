@@ -6,7 +6,8 @@ import {UpdateCheck, isChangedFormValue, markFormGroupTouched} from '@utils';
 @Component({
   selector: 'app-angu-form',
   templateUrl: './angu-form.component.html',
-  styleUrls: ['./angu-form.component.scss']
+  styleUrls: ['./angu-form.component.scss'],
+  standalone: false
 })
 export class AnguFormComponent implements OnInit {
   myForm: FormGroup;

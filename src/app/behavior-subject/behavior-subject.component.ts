@@ -5,7 +5,8 @@ import {MessageService} from '@app/services/message.service';
 @Component({
   selector: 'app-behavior-subject',
   templateUrl: './behavior-subject.component.html',
-  styleUrls: ['./behavior-subject.component.scss']
+  styleUrls: ['./behavior-subject.component.scss'],
+  standalone: false
 })
 export class BehaviorSubjectComponent implements OnInit {
   constructor(private dataShareService: DataShareService) {}

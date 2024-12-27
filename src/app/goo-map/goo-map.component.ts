@@ -9,7 +9,8 @@ interface MarkerProperties {
 @Component({
   selector: 'app-goo-map',
   templateUrl: './goo-map.component.html',
-  styleUrls: ['./goo-map.component.scss']
+  styleUrls: ['./goo-map.component.scss'],
+  standalone: false
 })
 export class GooMapComponent {
   latitude = 48.8588548; // default latitude

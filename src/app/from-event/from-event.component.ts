@@ -5,7 +5,8 @@ import {DesignService} from '@services';
 @Component({
   selector: 'app-from-event',
   templateUrl: './from-event.component.html',
-  styleUrls: ['./from-event.component.scss']
+  styleUrls: ['./from-event.component.scss'],
+  standalone: false
 })
 export class FromEventComponent implements OnInit, AfterViewInit {
   constructor(private designService: DesignService) {}

@@ -7,7 +7,8 @@ import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 @Component({
   selector: 'app-retry',
   templateUrl: './retry.component.html',
-  styleUrls: ['./retry.component.scss']
+  styleUrls: ['./retry.component.scss'],
+  standalone: false
 })
 export class RetryComponent implements OnInit {
   person: IUsers;

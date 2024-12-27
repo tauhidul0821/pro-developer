@@ -3,7 +3,8 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-optimize-image-size',
   templateUrl: './optimize-image-size.component.html',
-  styleUrls: ['./optimize-image-size.component.scss']
+  styleUrls: ['./optimize-image-size.component.scss'],
+  standalone: false
 })
 export class OptimizeImageSizeComponent implements OnInit {
   public errorMessage: string;
