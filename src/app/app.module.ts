@@ -1,4 +1,4 @@
-import {HttpClientModule} from '@angular/common/http';
+import {provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
@@ -12,8 +12,8 @@ import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, AppRoutingModule.components, ErrorMessageComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule, GoogleMapsModule, FormsModule],
-  providers: [MessageService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, GoogleMapsModule, FormsModule],
+  providers: [MessageService, provideHttpClient(withInterceptorsFromDi())]
 })
 export class AppModule {}
