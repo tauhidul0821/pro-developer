@@ -5,7 +5,8 @@ import {toArray, filter} from 'rxjs/operators';
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
-  styleUrls: ['./filter.component.scss']
+  styleUrls: ['./filter.component.scss'],
+  standalone: false
 })
 export class FilterComponent implements OnInit {
   data01: IMember[];

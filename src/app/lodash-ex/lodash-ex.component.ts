@@ -4,7 +4,8 @@ import * as _ from 'lodash';
 @Component({
   selector: 'app-lodash-ex',
   templateUrl: './lodash-ex.component.html',
-  styleUrls: ['./lodash-ex.component.scss']
+  styleUrls: ['./lodash-ex.component.scss'],
+  standalone: false
 })
 export class LodashExComponent implements OnInit {
   loadashCode = `

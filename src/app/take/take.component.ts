@@ -6,7 +6,8 @@ import {map, take, takeLast, takeUntil} from 'rxjs/operators';
 @Component({
   selector: 'app-take',
   templateUrl: './take.component.html',
-  styleUrls: ['./take.component.scss']
+  styleUrls: ['./take.component.scss'],
+  standalone: false
 })
 export class TakeComponent implements OnInit {
   nameSource: Observable<string>;

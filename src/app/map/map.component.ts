@@ -4,7 +4,8 @@ import {filter, find, interval, of, switchMap, map, tap} from 'rxjs';
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  styleUrls: ['./map.component.scss'],
+  standalone: false
 })
 export class MapComponent implements OnInit {
   constructor() {}
