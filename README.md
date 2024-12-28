@@ -1,3 +1,54 @@
+## JavaScript Advance Topic
+
+- callback, promise, try/catch, async/await, javaScript Inheritances, Destructuring,( reduce, spread/rest, call/apply/bind ), ( which one console fist: promise , callback, or other task, )
+
+## CSS Advance Topic
+
+- content-box vs. border-box, Units: px, em, rem, %, vh, vw,
+  Flexbox, CSS Grid, Media Queries, Transitions and Animations, CSS Functions, nesting, mixins, extends, Advanced Grid and Flexbox Patterns,
+
+## Angular Advance Topic
+
+- Signals , observable, rxjs, createComponent, lazy loading, Dynamic Components, Change Detection Strategy, Custom Pipes, Custom Validators and Async Validators, Angular Animations, Router Guards, State Management like: NgRx, Custom Decorators, Advanced Routing Techniques: outlets , nested routing , dynamic route configuration, Micro-Frontend Architecture, Standalone APIs,
+
+## TypeScript Advance Topic
+
+- mapped types
+- Conditional Type Distributivity
+- template literal types
+- TypeScript comes with many built-in utility types, such as Partial, DeepPartial, Pick, Omit, Record, Required,Readonly and more.
+- generics type/ type guards, intersection types,
+- discriminated unions types
+- TypeScript infers types where possible to reduce boilerplate.
+- Template Literal Type Inference
+- Branded Types.
+- Exact Object Types with keyof and never
+- as const Assertions
+- Exhaustiveness Checking
+
+## NodeJs Advance Topic
+
+- simple REST API, get, post, put, delete, patch
+- SQL/NoSQL setup
+- gRPC, GraphQL,
+- login/logout, jwt, authgard
+- photo/file upload/download
+- real time communication : WebSockets, Server-Sent Events (SSE), WebRTC ,
+- data with pagination
+- node with Kafka
+
+```ts
+// Combine infer with template literals for parsing and type extraction.
+
+type ExtractUserId<T> = T extends `user-${infer U}` ? U : never;
+
+type UserId = ExtractUserId<'user-12345'>; // "12345"
+```
+
+## Database Advance Topic
+
+- Database Transactions
+-
 
 ![sddefault](https://github.com/tauhidul0821/pro-developer/assets/10520882/c7c32749-ef85-4de6-a017-9c3445d62f39)
 
@@ -284,4 +335,3 @@ console.log(new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).form
 // Expected output: "1,23,000"
 
 ```
-
