@@ -1,18 +1,46 @@
 # Live Demo: https://ornate-pithivier-6de5b9.netlify.app/
 
-
 ## JavaScript Advance Topic
 
-- callback, promise, try/catch, async/await, javaScript Inheritances, Destructuring,( reduce, spread/rest, call/apply/bind ), ( which one console fist: promise , callback, or other task, )
+- callback,
+- promise,
+- try/catch,
+- async/await,
+- javaScript Inheritances,
+- advance Destructuring,
+- javascript advance function ( reduce, spread/rest, call/apply/bind ),
+- which one console fist: promise , callback, or other task,
 
 ## CSS Advance Topic
 
-- content-box vs. border-box, Units: px, em, rem, %, vh, vw,
-  Flexbox, CSS Grid, Media Queries, Transitions and Animations, CSS Functions, nesting, mixins, extends, Advanced Grid and Flexbox Patterns,
+- content-box vs. border-box,
+- Units: px, em, rem, %, vh, vw,
+- Flexbox,
+- CSS Grid,
+- Media Queries,
+- Transitions and Animations,
+- CSS Functions,
+- nesting, mixins, extends,
+- Advanced Grid and Flexbox Patterns
 
 ## Angular Advance Topic
 
-- Signals , observable, rxjs, createComponent, lazy loading, Dynamic Components, Change Detection Strategy, Custom Pipes, Custom Validators and Async Validators, Angular Animations, Router Guards, State Management like: NgRx, Custom Decorators, Advanced Routing Techniques: outlets , nested routing , dynamic route configuration, Micro-Frontend Architecture, Standalone APIs,
+- Signals ,
+- observable,
+- rxjs,
+- createComponent,
+- lazy loading,
+- Dynamic Components,
+- Change Detection Strategy,
+- Custom Pipes,
+- Custom Validators and Async Validators,
+- Angular Animations,
+- Router Guards,
+- State Management like: NgRx,
+- Custom Decorators,
+- Advanced Routing Techniques: outlets , nested routing , dynamic route configuration,
+- Micro-Frontend Architecture,
+- Standalone APIs,
 
 ## TypeScript Advance Topic
 

@@ -38,6 +38,7 @@ import {LodashExComponent} from './lodash-ex/lodash-ex.component';
 import {AnguFormComponent} from './angu-form/angu-form.component';
 import {AddressComponent} from './angu-form/components/address/address.component';
 import {GooMapComponent} from './goo-map/goo-map.component';
+import {CustomDirectiveComponent} from './custom-directive/custom-directive.component';
 
 const routes: Routes = [
   {
@@ -68,7 +69,8 @@ const routes: Routes = [
       {path: 'optimize-image', component: OptimizeImageSizeComponent},
       {path: 'lodash', component: LodashExComponent},
       {path: 'map', component: GooMapComponent},
-      {path: 'form', component: AnguFormComponent}
+      {path: 'form', component: AnguFormComponent},
+      {path: 'custom-directive', component: CustomDirectiveComponent}
     ]
   },
   {
